@@ -1,11 +1,11 @@
-[build.environment]
-  NODE_VERSION = "18"
-  NODE_OPTIONS = "--openssl-legacy-provider"
-
 [build]
   base = "client"
   command = "npm run build"
   publish = "client/build"
+
+[build.environment]
+  NODE_VERSION = "18"
+  NODE_OPTIONS = "--openssl-legacy-provider"
 
 [[redirects]]
   from = "/*"
